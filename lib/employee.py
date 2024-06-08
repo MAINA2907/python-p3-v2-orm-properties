@@ -180,6 +180,7 @@ class Employee:
             SELECT *
             FROM employees
             WHERE name is ?
+            
         """
 
         row = CURSOR.execute(sql, (name,)).fetchone()
